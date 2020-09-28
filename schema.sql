@@ -30,3 +30,7 @@ SELECT * FROM employee;
 INSERT INTO employee_tracker(first_name, last_name, role_id, manager_id)
 VALUES("Victoria", "Blackburn", 00001, 00002);
 
+SELECT department.name
+FROM 
+INNER JOIN employee 
+ON employee.first_name =employee.employee.first_name;
