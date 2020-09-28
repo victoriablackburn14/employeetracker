@@ -12,7 +12,7 @@ CREATE TABLE role(
      id INT AUTO_INCREMENT NOT NULL,
      title VARCHAR(30),
      salary DECIMAL (10,2),
-     department_id INT NOT NULL
+     department_id INT NOT NULL,
      PRIMARY KEY (id)
 );
 
@@ -25,4 +25,8 @@ CREATE TABLE employee(
 );
 
 
+SELECT * FROM employee;
+
+INSERT INTO employee_tracker(first_name, last_name, role_id, manager_id)
+VALUES("Victoria", "Blackburn", 00001, 00002);
 

@@ -17,12 +17,12 @@ var connection = mysql.createConnection({
   database: "employee_tracker"
 });
 
-userInput();
 
+//user input function not being read//
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected as id " + connection.threadId);
-  function userInput(){
+    {
     inquirer
         .prompt([
     
@@ -61,12 +61,9 @@ connection.connect(function(err) {
             console.log("You have been added!")
             start();
         }
-
         )
     })
-    );
-  
-  
-  
-  
-  connection.end();
+    )})}
+});
+
+connection.end();
